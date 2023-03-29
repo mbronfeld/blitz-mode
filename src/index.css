@@ -1,0 +1,272 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.button-36 {
+  background-color: #b164f4;
+  border-radius: 20px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-size: 3vh;
+  font-weight: 500;
+  /* height: 4rem; */
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  height: 20%;
+}
+
+.button-36:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+@media (min-width: 768px) {
+  .button-36 {
+    padding: 0 2.6rem;
+  }
+}
+/* CSS */
+.button-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #1ea5ff;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 7vh;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 20vh;
+  flex-grow: 1;
+}
+
+.button-5:hover {
+  box-shadow: rgba(63, 125, 205, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+.operation-button-array {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: inherit;
+  justify-content: space-between;
+}
+
+.lower-button-groups {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  height: 30vh;
+}
+
+.button-array-container {
+  width: 80%;
+  display: flex;
+  gap: 20px;
+  height: inherit;
+  justify-content: space-evenly;  
+}
+
+.chosen-button-array-container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 30vh;
+  align-items: center;
+  gap: 20px;
+}
+
+.left-chosen-button {
+  border-radius: 30px;
+  display: flex;
+  justify-content: flex-start;
+  width: 35%;
+  height: 100%;
+}
+
+.right-chosen-button {
+  border-radius: 30px;
+  display: flex;
+  justify-content: flex-end;
+  width: 35%;
+  height: 100%;
+}
+
+.op-chosen-button {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  height: 100%;
+  align-items: center;
+}
+
+.top-op-button-special-height {
+  height: 50%;
+  width: 80%;
+}
+
+.target {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  font-size: 40px;
+  background-color: #282c34;
+  color: white;
+  font-weight: bold;
+}
+
+.game-state-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #282c34;
+  padding-right: 10%;
+  padding-left: 10%;
+  height: 10vh;
+  color: white;
+}
+
+.game-state-button {
+  background-color: #33ce25;
+  border-radius: 20px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-size: 3vh;
+  font-weight: 500;
+  height: 50%;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.undo-button:hover {
+  box-shadow: rgba(47, 212, 50, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+@media (min-width: 768px) {
+  .undo-button {
+    padding: 0 2.6rem;
+  }
+}
+
+.game-board {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  justify-content: center;
+}
+
+.victory {
+  background-color: #282c34;
+  text-align: center;
+  font-size: 100px;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game_ui {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.timer {
+  display: flex;
+  background-color:#282c34;
+  color: white;
+  position: absolute;
+  z-index: 1;
+  justify-content: center;
+  width: 15%;
+  height: 10%;
+  align-items: center;
+}
+
+.user-diplay {
+  display: flex;
+  background-color:#282c34; 
+}
+
+.score-box {
+  display: flex;
+  background-color:#282c34;
+  color: white;
+  position: absolute;
+  z-index: 1;
+  justify-content: center;
+  width: 15%;
+  height: 10%;
+  align-items: center;
+  top: 0;
+  right: 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.playable-game-view {
+  display: flex;
+  background-color:#282c34; 
+  width: 100%;
+}
