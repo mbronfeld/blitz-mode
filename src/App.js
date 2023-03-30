@@ -110,7 +110,7 @@ export default function App() {
     setTimeout(function () {
       setGamePlayable(false);
       console.log("DONE")
-    }, 60000);
+    }, 240000);
   }, []);
 
   const startingNums = getNumbers()
