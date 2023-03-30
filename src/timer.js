@@ -9,7 +9,7 @@ const Timer = () => {
     const Ref = useRef(null);
   
     // The state for our timer
-    const [timer, setTimer] = useState('00:01:00');
+    const [timer, setTimer] = useState('00:04:00');
   
   
     const getTimeRemaining = (e) => {
