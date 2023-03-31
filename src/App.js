@@ -106,32 +106,19 @@ export default function App() {
     setScore(newScore)
   }
 
-  React.useEffect(() => {
-    setTimeout(function () {
-      setGamePlayable(false);
-      console.log("DONE")
-    }, 240000);
-  }, []);
-
   const startingNums = getNumbers()
   const startingButtons = getButtons(startingNums)
   const startingTarget = getTarget(startingNums)
 
   return (
-    <div className="App">
-      { gamePlayable ? 
-        <div className="playable-game-view">
-          <Timer/>
-          <GameUI list_of_buttons={list_of_buttons} target_list={target_list} changeScore={upScore} score={score} 
-            getNumbers={getNumbers} getButtons={getButtons} getTarget={getTarget} startingButtons={startingButtons} startingTarget={startingTarget}/>
-          <div className='score-box'>
-            Score: {score}
-          </div> 
-        </div>   
-        : 
-        <div className='victory'>
-          You scored: {score}
-        </div>}
+    <div className="App"> 
+      <div className="playable-game-view">
+        <GameUI list_of_buttons={list_of_buttons} target_list={target_list} changeScore={upScore} score={score} 
+          getNumbers={getNumbers} getButtons={getButtons} getTarget={getTarget} startingButtons={startingButtons} startingTarget={startingTarget}/>
+        <div className='score-box'>
+          Score: {score}
+        </div> 
+      </div>
     </div>
     
   );
